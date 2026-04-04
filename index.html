@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misha Malkin</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #d9d9d9;
+            font-family: "Times New Roman", Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            opacity: 0;
+            animation: fadeIn 4s ease forwards;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        /* Subtle hover effect */
+        .container:hover {
+            transform: translateY(-2px);
+            opacity: 1;
+        }
+
+        h1 {        
+            font-size: 3rem;
+            font-weight: normal;
+            letter-spacing: 10.5px;
+            margin-bottom: 1rem;
+            transition: letter-spacing 0.3s ease;
+        }
+
+
+        p {
+            font-size: 1.2rem;
+            color: #bfbfbf;
+            letter-spacing: 3px;
+            line-height: 1.6;
+        }
+
+        .coming-soon {
+            display: block;
+            margin-top: 0.8rem;
+            font-size: 1.1rem;
+            color: #a6a6a6;
+            letter-spacing: 3px;
+        }
+
+        /* Instagram section */
+        .instagram {
+            margin-top: 2.5rem;
+            font-size: 0.9rem;
+            color: #7a7a7a;
+            letter-spacing: 2px;
+        }
+
+        .instagram a {
+            color: #b0b0b0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .instagram a:hover {
+            color: #d0d0d0;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Misha Malkin</h1>
+        <p>
+            We are power in presence.
+            <span class="coming-soon"> | Coming soon | </span>
+        </p>
+
+        <div class="instagram">
+            Follow us on Instagram —
+            <a href="https://www.instagram.com/mishamalkinlimited/" target="_blank">@mishamalkinlimited</a>
+        </div>
+    </div>
+</body>
+</html>
